@@ -1,0 +1,29 @@
+import React from "react";
+import { Navbar } from "./Navbar";
+import video1 from "../video1.mp4";
+import video2 from "../video2.mp4" ;
+export const HerSection =()=>{
+    return(
+    <div className=" flex flex-col items-centre mt-g lg:mt-20">
+        <h1 className="text-3xl sm:text-5xl lg:text-5xl text-center tracking-wide">
+            VirtualR build tools  
+            <span className="bg-gradient-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text"> for <br/> developers</span>  
+
+        </h1>
+        <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl mx-auto">Developers rely on a variety of tools to enhance productivity and streamline the development process. Version control systems like Git are essential for tracking changes and 
+            collaborating on code with team members.</p>
+            <div className="flex justify-center my-10">
+                <a href="#" className=" bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-3 mx-3 rounded-md">Start for free</a>
+                <a href="#" className="py-3 px-4 mx-3 rounded-md border">Documentation</a>
+            </div>
+            <div className="flex mt-10 justify-center">
+                <video autoPlay loop muted className="rounded-lg w-1/2 border border-orange-700 shadow-orange-400 mx-4 my-4">
+                <source src={video1} type="video/mp4"/>
+                Your Browser does not support video tag</video>
+                <video autoPlay loop muted className="rounded-lg w-1/2 border border-orange-700 shadow-orange-400 mx-2 my-4">
+                <source src={video2} type="video/mp4"/>
+                Your Browser does not support video tag</video>
+            </div>
+    </div>
+    );
+}
